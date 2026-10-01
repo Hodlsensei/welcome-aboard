@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Instagram } from "lucide-react";
 import { FormEvent, useState } from "react";
 import { z } from "zod";
+import logoAsset from "../assets/snifdit-logo.png.asset.json";
 
 const waitlistSchema = z.object({
   name: z.string().trim().min(1).max(100),
@@ -33,9 +34,10 @@ function TikTokIcon() {
 
 function Brand() {
   return (
-    <header className="text-brand text-center">
-      <h1 className="font-display text-[3.25rem] font-black leading-[0.8] tracking-normal sm:text-[3.45rem]">SNIFDIT</h1>
-      <p className="mt-3 text-[0.93rem] leading-none tracking-normal">ONE SNIF IS ALL YOU NEED</p>
+    <header className="text-center">
+      <h1>
+        <img src={logoAsset.url} alt="SNIFDIT — ONE SNIF IS ALL YOU NEED" className="mx-auto block w-full max-w-[312px] h-auto" />
+      </h1>
     </header>
   );
 }
@@ -69,7 +71,7 @@ function SnifditLanding() {
 
         {complete ? (
           <div className="flex min-h-0 flex-1 flex-col text-center text-panel-foreground">
-            <div className="mt-[111px]">
+            <div className="mt-[91px]">
               <p className="text-[1.08rem] leading-none tracking-normal">follow the journey @snifdit</p>
               <nav aria-label="SNIFDIT social media" className="mt-4 flex items-center justify-center gap-4">
                 <a href="https://www.instagram.com/snifdit" target="_blank" rel="noreferrer" aria-label="Follow SNIFDIT on Instagram" className="transition-opacity hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-current">
@@ -83,7 +85,7 @@ function SnifditLanding() {
             <p className="mt-auto text-[0.96rem] leading-none tracking-normal">SNIFFING SOON...</p>
           </div>
         ) : (
-          <form onSubmit={submitWaitlist} noValidate className="mt-[42px] flex flex-1 flex-col text-center">
+          <form onSubmit={submitWaitlist} noValidate className="mt-[22px] flex flex-1 flex-col text-center">
             <p className="text-panel-foreground text-[0.97rem] leading-[1.4] tracking-normal">
               The first SNIF is almost here...<br />Join the waitlist for early access.
             </p>
