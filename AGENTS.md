@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep the waitlist experience as a single client-side state transition on the home route, because the submitted view replaces the form without navigation.
