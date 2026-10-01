@@ -2,9 +2,17 @@
 @source "../src";
 @import "tw-animate-css";
 
+@font-face {
+  font-family: "Jellee";
+  src: url("/__l5e/assets-v1/046effce-44d3-4c64-8d30-6dd9da33f4ad/Jellee-Roman.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 @theme inline {
-  --font-body: "Nunito Sans", sans-serif;
-  --font-display: "Coiny", sans-serif;
+  --font-body: "Jellee", sans-serif;
+  --font-display: "Avatar", "Coiny", sans-serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-page: var(--page);
@@ -17,15 +25,15 @@
 }
 
 :root {
-  --background: oklch(0.65 0.2 42);
+  --background: oklch(0.627106 0.191184 40.995);
   --foreground: oklch(0.985 0 0);
-  --page: oklch(0.65 0.2 42);
-  --panel: oklch(0.48 0.16 148);
+  --page: oklch(0.627106 0.191184 40.995);
+  --panel: oklch(0.50927 0.142922 148.923);
   --panel-foreground: oklch(0.985 0 0);
-  --brand: oklch(0.72 0.18 42);
-  --input-text: oklch(0.16 0.03 148);
+  --brand: oklch(0.627106 0.191184 40.995);
+  --input-text: oklch(0 0 0);
   --error: oklch(0.88 0.12 90);
-  --border: oklch(0.72 0.18 42);
+  --border: oklch(0.627106 0.191184 40.995);
 }
 
 @layer base {
