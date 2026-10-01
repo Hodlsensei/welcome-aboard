@@ -10,3 +10,4 @@
 <!-- LOVABLE:END -->
 
 - Keep the waitlist experience as a single client-side state transition on the home route, because the submitted view replaces the form without navigation.
+- Load app-specific fonts as CDN assets with CSS font faces, because the visual match depends on typography unavailable from standard web-font libraries.
